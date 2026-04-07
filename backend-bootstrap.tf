@@ -1,9 +1,6 @@
 # This is a one-time setup file to create the S3 bucket and DynamoDB table
 # After running this once, you can delete this file or move it to a separate directory
 
-provider "aws" {
-  region = "ca-central-1"
-}
 
 # S3 bucket to store Terraform state files
 resource "aws_s3_bucket" "state" {
